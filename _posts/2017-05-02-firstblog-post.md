@@ -2,7 +2,7 @@
 layout: post
 title: " 就此安家落户！"
 date: 2017-05-02
-excerpt: "bran‘s blog."
+excerpt: "全网首发"
 tags: [first, blog]
 comments: true
 ---
