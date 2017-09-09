@@ -1,30 +1,3 @@
-# Moon Jekyll Theme [![Donate](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/taylantatli/0usd)  
-  
-## `Sorry guys but there will be no update until I buy a new laptop.`
-    
-######(If you like this theme or using it, please give a :star: for motivation.)
+#是的，这是fork来的主题，不过，重点应该是内容咯
 
-**[Moon](https://taylantatli.github.io/Moon)** is a minimal, one column jekyll theme.
-
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
-
-## Preview
-
-![screenshot of Moon](https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png)    
-![screenshot of Moon](https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png)
-
-See a [live version of Moon](https://taylantatli.github.io/Moon) hosted on GitHub.
-
-## Getting Started
-
-To learn how to install and use this theme check out the [Setup Guide](https://taylantatli.github.io/Moon/moon-theme/) for more information.
+文章内容在post文件夹，按时间排序，只需要书写规范的markdown文件即可发布到自己的博客，十分方便。
