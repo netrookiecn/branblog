@@ -36,7 +36,8 @@ one-hot是一种比较经典的文本向量表示方法，其思想是把背景�
 #### （1）朴素贝叶斯
 核心内容是条件概率，归结到短文本分类中含义是：某个短文本属于某个分类的概率，等于这个类别的概率 乘以 短文本中每个特征词在这个类别的条件概率。  
 <center>
-![](http://owcoclj9i.bkt.clouddn.com/image/jpg/textclassifcation/pic5.jpg)</center>  
+![](http://owcoclj9i.bkt.clouddn.com/image/jpg/textclassifcation/pic5.jpg)
+</center>  
 <center>图五</center>  
 在图中公式中，x为所有特征词的集合，y是预测的分类结果也就是标签label，由于p(x)对于所有的label都相等，所以可以只考虑比较上述分子的大小，计算x1 x2 x3..这个特征词组合在所有分类label下的p(y|x)值的大小，最大的那值对应的分类便是预测的结果。  
 原理很简单。但有几点需要注意：   
