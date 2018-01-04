@@ -15,8 +15,8 @@ comments: true
 one-hot是一种比较经典的文本向量表示方法，其思想是把背景语料中的所有词汇作为高维空间中的一维,如单词“手机”，在背景语料中的向量形式为[0,0,0,1,0,0,0,,0,0,0,...]这种形式，出现则置于1，反之置于0，即有一个1以及大量的0组成，对于某句话来说，该句子在背景语料中的句向量便是各个词的向量叠加。那么TFIDF算法（具体细节可看：[http://www.ruanyifeng.com/blog/2013/03/tf-idf.html]()）的作用是什么呢，TFIDF对于比较长的文档来说，能根据词频计算出这片文章比较重要的词汇，但是在短文本的情况下，则可以计算出IDF（逆文档频率），即某个单词在背景语料中的区分度，这样，我们将计算出来的值替换掉原来的1，便更能精确地表示句向量，同时，我们对背景语料的所有出现过的词汇标记一个序号，这样，每个短文本句子可以表示为结构:   **index1:idf1  index2:idf2  index3:idf3 ...**  
 以此类推，其中， index为该词在所有词汇中的索引位置，idf为该词的idf值。  
 *注：在机器学习算法中可将数值归一化为-1到1之间，便于计算，这里推荐离差标准化如图一所示。*
-<center>
-![](http://owcoclj9i.bkt.clouddn.com/image/jpg/textclassifcation/WechatIMG36.jpg)</center>
+
+![](http://owcoclj9i.bkt.clouddn.com/image/jpg/textclassifcation/WechatIMG36.jpg)
 <center>图一</center>
 
 ![](http://owcoclj9i.bkt.clouddn.com/image/jpg/textclassifcation/pic2.jpg)

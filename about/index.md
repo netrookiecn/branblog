@@ -8,8 +8,8 @@ comments: false
 
 ## Contents
 
-Java EE
-Python
-自然语言处理
+Java EE  
+Python  
+自然语言处理  
 推荐系统
 
