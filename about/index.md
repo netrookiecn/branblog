@@ -25,7 +25,7 @@ comments: false
 
 * 学历：**2017** 毕业于 **同济大学** 硕士学位
 
-* GitHub:   https://github.com/jiangxiaolin
+* GitHub:   [https://github.com/jiangxiaolin]()
 
 * 微信公众号：**NetRookie**
 
@@ -65,11 +65,11 @@ comments: false
 
 * 编程语言： Java、Python
 
-* Web开发： Java EE、Spring MVC、Spring Boot、MyBatis、JavaScript、Jquery
+* Web开发： Java EE、Spring Boot、MyBatis、JavaScript、Jquery
 
 * 数据库： MySql、Mongodb
 
-* 版本／项目管理：Git / Maven、Gradle
+* 版本／项目管理：Git、Maven／Gradle
 
 * 搜索： Lucene
 
