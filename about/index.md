@@ -53,7 +53,7 @@ comments: false
 使用CRF算法解决此序列标注问题，使用搜狗语料进行训练测试，完成程序编写，并制定了相关接口。同时与华东师范大学实验室进行同步优化
 
 * **NLP基础功能（nlpsdk）**  
-文本分类: （1） 朴素贝叶斯(推荐) (2)最大熵  (3)libsvm  文本相似度计算：（1）最小编辑距离+最大公共子串（推荐） （2）余弦相似度  关键词提取：TextRank算法  文档（够长）摘要提取: 类似TextRank  特征词提取：卡方检验  特征向量计算：TFIDF、Word2Vec  文本聚类：循环遍历+编辑距离 / DensityPeak Cluster  
+文本分类: （1） 朴素贝叶斯(推荐) (2)最大熵  (3)libsvm  文本相似度计算：（1）最小编辑距离+最大公共子串（推荐） （2）余弦相似度  关键词提取：TextRank算法  文档（够长）摘要提取: 类似TextRank  特征词提取：卡方检验  特征向量计算：TFIDF、Word2Vec  文本聚类：循环遍历+编辑距离  
 
 
 * **其他**  
@@ -65,13 +65,9 @@ comments: false
 
 * 编程语言： Java、Python
 
-* Web开发： Java EE、Spring Boot、MyBatis、JavaScript、Jquery
+* Web开发： Java EE、Spring Boot、JavaScript、Jquery、MySQL
 
-* 数据库： MySql、Mongodb
-
-* 版本／项目管理：Git、Maven／Gradle
-
-* 搜索： Lucene
+* 版本／项目管理：Git、Maven
 
 * NLP基础：熟悉分词、词性标注、实体识别及新词发现等自然语言处理基础功能的实现
 
