@@ -2,7 +2,7 @@
 layout: post  
 title: "机器学习常见相似度计算公式总结"  
 date: 2018-05-07  
-excerpt: "文章摘要"  
+excerpt: "常见相似计算公式，如余弦公式，欧式距离，皮尔逊相关系数"  
 tags: [相似度，距离]
 comments: true
 ---
