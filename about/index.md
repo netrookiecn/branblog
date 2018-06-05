@@ -15,13 +15,12 @@ comments: false
 * 个人心得
 
 ---
-# 个人简历
 
 # 个人信息 
 
 * 江小林／男／1992  
 
-* 联系方式：j1160090532（**微信**）  jiangxl7@163.com(**邮箱**)
+* 联系方式：jiangxl7@163.com(**邮箱**)
 
 * 工作年限：**1**年  
 
@@ -101,7 +100,5 @@ comments: false
 * 机器学习 / 深度学习：了解**逻辑回归、SVM、贝叶斯、LDA主题模型、隐马尔科夫模型、条件随机场**等机器学习基础算法; 了解**RNNs**并使用TensorFlow进行文本分类实践
 
 
-# 感谢
-Thank you for reading my resume !
 
 
