@@ -12,7 +12,7 @@ comments: false
 * Python  
 * 自然语言处理  
 * 推荐系统
-* 个人心得
+
 
 ---
 
