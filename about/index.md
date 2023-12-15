@@ -63,4 +63,5 @@ comments: false
 ### 自我评价
 个人自2017年毕业以来，一直从事文本处理相关工作，主要技术栈为：Java/Python/Hive/Spring/Keras/Torch, 在携程工作近5年多，对于客服领域的文本处理项目有着较为丰富的经验，善于进行技术落地及项目推进。
 个人时刻保持永久学习心态，不断跟进业内最新动态。
+https://github.com/netrookiecn 
 
