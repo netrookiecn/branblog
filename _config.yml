@@ -1,7 +1,7 @@
 # Site
 title:              Bran's Blog
 bio:                'Here comes the future'
-description:        "Jiangxiaolin'blog,using github pages and jekyll theme moon."
+description:        "Bran's Blog,using github pages and jekyll theme moon."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
@@ -38,10 +38,10 @@ disqus_shortname:   netrookie
   #ad-client:
   #ad-slot:
 #bing-verify:
-email:              18101723592@163.com
+email:              jiangxl7@hotmail.com
 #twitter:            username
 #facebook:           username
-github-url:         jiangxiaolin
+#github-url:         netrookiecn
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 linkedin:           jiangxiaolin
 #xing:              username
