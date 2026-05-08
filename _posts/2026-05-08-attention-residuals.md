@@ -5,39 +5,11 @@ date: 2026-05-08
 tags: [LLM, Architecture, Kimi, Residual]
 ---
 
-上周我在复现一个 48B MoE 模型时遇到个怪事：前 10 层的梯度是后 10 层的 3 倍，loss 下降到 1.8 就卡住了。查了两天，最后发现不是学习率的问题，是 PreNorm + 残差连接本身的结构性缺陷——**深层的输出被浅层的累积稀释了**。
+Kimi 团队这篇 Attention Residuals 让我重新审视了一个我原以为"解决了就不用管"的问题：**残差连接**。
 
-如果你也怀疑自己的模型有这个问题，跑这段诊断：
+论文的核心发现：PreNorm + 标准残差在深层模型上有结构性缺陷——随着层数增加，hidden state 的 magnitude 是 O(L) 增长的，**深层的输出会被浅层的累积稀释**。Kimi 在 48B MoE 模型上观察到，Baseline 的前 10 层梯度是后 10 层的 3-4 倍（Figure 5c）。
 
-```python
-# 检查各层输出 magnitude 和梯度分布
-def diagnose_dilution(model, sample_batch):
-    layer_out_norms, layer_grad_norms = [], []
-    hooks = []
-    
-    def hook_fn(name):
-        def fn(m, inp, out):
-            layer_out_norms.append((name, out.norm().item()))
-        return fn
-    
-    for name, module in model.named_modules():
-        if 'layer' in name and hasattr(module, 'weight'):
-            hooks.append(module.register_forward_hook(hook_fn(name)))
-    
-    loss = model(sample_batch).loss
-    loss.backward()
-    
-    for name, param in model.named_parameters():
-        if param.grad is not None:
-            layer_grad_norms.append((name, param.grad.norm().item()))
-    
-    [h.remove() for h in hooks]
-    
-    # 如果前 10 层梯度 / 后 10 层梯度 > 2，你大概率踩到稀释问题了
-    return layer_out_norms, layer_grad_norms
-```
-
-然后我翻到 Kimi 团队刚发的这篇 Attention Residuals，发现他们不仅诊断出了同样的问题，还给出了一个我没想到的解法：**把残差连接从固定加权换成深度维度的 softmax attention**。
+他们的解法出乎我意料：**把残差连接从固定加权换成深度维度的 softmax attention**。
 
 这篇文章我想讲三件事：
 1. **PreNorm 的稀释问题到底有多严重**——不是"可能有影响"，是"深层 40% 的层可以直接剪掉"
