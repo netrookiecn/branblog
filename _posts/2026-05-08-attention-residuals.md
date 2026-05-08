@@ -89,6 +89,8 @@ h_l = Σ_{i=0}^{l-1} α_{i→l} · v_i
 
 ## 三、Block AttnRes：从 O(Ld) 到 O(Nd) 的工程妥协
 
+![Standard Residual vs Full AttnRes vs Block AttnRes](/assets/images/01-attnres-comparison.svg)
+
 ### Full AttnRes 的问题
 
 在小规模训练中，Full AttnRes 几乎没有额外开销——反正 backward 要保存所有层的 activation。

@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700">
+  <rect width="1600" height="700" fill="#f8f6f3"/>
+  
+  <!-- Title -->
+  <text x="800" y="45" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#1a1a1a" text-anchor="middle">Standard Residual vs Full AttnRes vs Block AttnRes</text>
+  
+  <!-- Column Labels -->
+  <text x="267" y="85" font-family="system-ui, sans-serif" font-size="18" font-weight="500" fill="#1a1a1a" text-anchor="middle">(a) Standard Residuals</text>
+  <text x="800" y="85" font-family="system-ui, sans-serif" font-size="18" font-weight="500" fill="#1a1a1a" text-anchor="middle">(b) Full Attention Residuals</text>
+  <text x="1333" y="85" font-family="system-ui, sans-serif" font-size="18" font-weight="500" fill="#1a1a1a" text-anchor="middle">(c) Block Attention Residuals</text>
+  
+  <!-- ===== Column 1: Standard Residuals ===== -->
+  <!-- Embedding -->
+  <rect x="167" y="580" width="200" height="50" rx="6" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="2.5"/>
+  <text x="267" y="610" font-family="system-ui, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Embedding</text>
+  
+  <!-- Layer boxes -->
+  <rect x="167" y="480" width="200" height="50" rx="6" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2.5"/>
+  <text x="267" y="510" font-family="system-ui, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Attention</text>
+  
+  <rect x="167" y="380" width="200" height="50" rx="6" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="2.5"/>
+  <text x="267" y="410" font-family="system-ui, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">MoE</text>
+  
+  <rect x="167" y="280" width="200" height="50" rx="6" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2.5"/>
+  <text x="267" y="310" font-family="system-ui, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Attention</text>
+  
+  <rect x="167" y="180" width="200" height="50" rx="6" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="2.5"/>
+  <text x="267" y="210" font-family="system-ui, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">MoE</text>
+  
+  <rect x="167" y="110" width="200" height="40" rx="6" fill="#e8e6e3" stroke="#4a4a4a" stroke-width="2.5"/>
+  <text x="267" y="135" font-family="system-ui, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Output</text>
+  
+  <!-- Arrows with w=1 labels -->
+  <line x1="267" y1="580" x2="267" y2="535" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="285" y="560" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a">w=1</text>
+  
+  <line x1="267" y1="480" x2="267" y2="435" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="285" y="460" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a">w=1</text>
+  
+  <line x1="267" y1="380" x2="267" y2="335" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="285" y="360" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a">w=1</text>
+  
+  <line x1="267" y1="280" x2="267" y2="235" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="285" y="260" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a">w=1</text>
+  
+  <line x1="267" y1="180" x2="267" y2="155" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="285" y="170" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a">w=1</text>
+  
+  <!-- ===== Column 2: Full AttnRes ===== -->
+  <!-- Embedding -->
+  <rect x="700" y="580" width="200" height="50" rx="6" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="2.5"/>
+  <text x="800" y="610" font-family="system-ui, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Embedding</text>
+  
+  <!-- Layer boxes -->
+  <rect x="700" y="480" width="200" height="50" rx="6" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2.5"/>
+  <text x="800" y="510" font-family="system-ui, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Attention</text>
+  
+  <rect x="700" y="380" width="200" height="50" rx="6" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="2.5"/>
+  <text x="800" y="410" font-family="system-ui, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">MoE</text>
+  
+  <rect x="700" y="280" width="200" height="50" rx="6" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2.5"/>
+  <text x="800" y="310" font-family="system-ui, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Attention</text>
+  
+  <rect x="700" y="180" width="200" height="50" rx="6" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="2.5"/>
+  <text x="800" y="210" font-family="system-ui, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">MoE</text>
+  
+  <rect x="700" y="110" width="200" height="40" rx="6" fill="#e8e6e3" stroke="#4a4a4a" stroke-width="2.5"/>
+  <text x="800" y="135" font-family="system-ui, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Output</text>
+  
+  <!-- AttnRes Op box -->
+  <rect x="910" y="300" width="80" height="180" rx="6" fill="#fff" stroke="#4a4a4a" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="950" y="395" font-family="system-ui, sans-serif" font-size="11" fill="#6a6a6a" text-anchor="middle" transform="rotate(-90 950 395)">AttnRes(α)</text>
+  
+  <!-- Curved arrows from all layers to AttnRes -->
+  <path d="M 900 605 Q 930 605 940 480" stroke="#5a5a5a" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 900 505 Q 920 505 940 420" stroke="#5a5a5a" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 900 405 Q 915 405 940 380" stroke="#5a5a5a" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 900 305 Q 915 305 940 340" stroke="#5a5a5a" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Alpha labels -->
+  <text x="920" y="550" font-family="system-ui, sans-serif" font-size="11" fill="#6a6a6a">α₀</text>
+  <text x="915" y="470" font-family="system-ui, sans-serif" font-size="11" fill="#6a6a6a">α₁</text>
+  <text x="915" y="395" font-family="system-ui, sans-serif" font-size="11" fill="#6a6a6a">α₂</text>
+  <text x="915" y="330" font-family="system-ui, sans-serif" font-size="11" fill="#6a6a6a">α₃</text>
+  
+  <!-- Output from AttnRes -->
+  <path d="M 940 300 Q 940 250 900 205" stroke="#5a5a5a" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- ===== Column 3: Block AttnRes ===== -->
+  <!-- Embedding -->
+  <rect x="1233" y="580" width="200" height="50" rx="6" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="2.5"/>
+  <text x="1333" y="610" font-family="system-ui, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Embedding</text>
+  
+  <!-- Block 1 boundary -->
+  <rect x="1223" y="425" width="220" height="120" rx="8" fill="none" stroke="#9dd4c7" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="1453" y="485" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a">Block₁</text>
+  
+  <!-- Layer boxes in Block 1 -->
+  <rect x="1233" y="480" width="200" height="50" rx="6" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2.5"/>
+  <text x="1333" y="510" font-family="system-ui, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Attention</text>
+  
+  <rect x="1233" y="430" width="200" height="40" rx="6" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="2.5"/>
+  <text x="1333" y="455" font-family="system-ui, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">MoE</text>
+  
+  <!-- Block 2 boundary -->
+  <rect x="1223" y="215" width="220" height="120" rx="8" fill="none" stroke="#9dd4c7" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="1453" y="275" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a">Block₂</text>
+  
+  <!-- Layer boxes in Block 2 -->
+  <rect x="1233" y="270" width="200" height="50" rx="6" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2.5"/>
+  <text x="1333" y="300" font-family="system-ui, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Attention</text>
+  
+  <rect x="1233" y="220" width="200" height="40" rx="6" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="2.5"/>
+  <text x="1333" y="245" font-family="system-ui, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">MoE</text>
+  
+  <rect x="1233" y="110" width="200" height="40" rx="6" fill="#e8e6e3" stroke="#4a4a4a" stroke-width="2.5"/>
+  <text x="1333" y="135" font-family="system-ui, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Output</text>
+  
+  <!-- Intra-block arrows (w=1) -->
+  <line x1="1333" y1="580" x2="1333" y2="535" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="1351" y="560" font-family="system-ui, sans-serif" font-size="11" fill="#6a6a6a">w=1</text>
+  
+  <line x1="1333" y1="480" x2="1333" y2="475" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <line x1="1333" y1="320" x2="1333" y2="265" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="1351" y="295" font-family="system-ui, sans-serif" font-size="11" fill="#6a6a6a">w=1</text>
+  
+  <!-- Inter-block attention arrows -->
+  <path d="M 1180 605 Q 1150 500 1180 425" stroke="#5a5a5a" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="1145" y="520" font-family="system-ui, sans-serif" font-size="11" fill="#6a6a6a">α₀</text>
+  
+  <path d="M 1180 455 Q 1150 350 1180 270" stroke="#5a5a5a" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="1145" y="360" font-family="system-ui, sans-serif" font-size="11" fill="#6a6a6a">α₁</text>
+  
+  <path d="M 1180 605 Q 1120 400 1180 220" stroke="#5a5a5a" stroke-width="1.5" fill="none" stroke-dasharray="4,2" marker-end="url(#arrow)"/>
+  <text x="1110" y="420" font-family="system-ui, sans-serif" font-size="11" fill="#6a6a6a">α₀</text>
+  
+  <line x1="1333" y1="220" x2="1333" y2="155" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#5a5a5a"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="50" y="640" width="500" height="45" rx="6" fill="#fff" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="70" y="668" font-family="system-ui, sans-serif" font-size="13" fill="#1a1a1a">Memory: O(Ld) → O(Nd)   |   w=1: 固定权重   |   α: learned attention weights</text>
+</svg>
