@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700">
+  <rect width="1600" height="700" fill="#f8f6f3"/>
+  
+  <!-- Title -->
+  <text x="800" y="40" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#1a1a1a" text-anchor="middle">MMTP: Three Design Options for Multimodal Token Prediction</text>
+  
+  <!-- Column 1: Option 1 - Direct Vision Embeddings -->
+  <rect x="50" y="80" width="480" height="40" rx="6" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="290" y="107" font-family="system-ui, sans-serif" font-size="16" font-weight="500" fill="#1a1a1a" text-anchor="middle">Option 1: Direct Vision Embeddings (Rejected)</text>
+  
+  <!-- Architecture diagram for Option 1 -->
+  <rect x="100" y="150" width="140" height="50" rx="6" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="170" y="180" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a" text-anchor="middle">CogViT</text>
+  
+  <rect x="280" y="150" width="140" height="50" rx="6" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="350" y="180" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a" text-anchor="middle">MLP Adapter</text>
+  
+  <rect x="100" y="250" width="320" height="35" rx="4" fill="#e8e6e3" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="260" y="272" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a" text-anchor="middle">Visual Inputs (v_1, v_2, ...)</text>
+  
+  <rect x="100" y="320" width="320" height="35" rx="4" fill="#e8e6e3" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="260" y="342" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a" text-anchor="middle">Text Inputs (t_1, t_2, ...)</text>
+  
+  <!-- Transformer block -->
+  <rect x="180" y="400" width="160" height="60" rx="6" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="260" y="435" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a" text-anchor="middle">Transformer Block x L</text>
+  
+  <!-- Arrows -->
+  <line x1="170" y1="200" x2="170" y2="250" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="350" y1="200" x2="350" y2="250" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="170" y1="250" x2="260" y2="320" stroke="#5a5a5a" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arrow)"/>
+  <line x1="350" y1="250" x2="260" y2="320" stroke="#5a5a5a" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arrow)"/>
+  <line x1="260" y1="285" x2="260" y2="330" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="260" y1="355" x2="260" y2="400" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- MTP Head with direct visual -->
+  <rect x="130" y="500" width="260" height="60" rx="6" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="260" y="535" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a" text-anchor="middle">MTP Module (Direct Visual)</text>
+  
+  <line x1="260" y1="460" x2="260" y2="500" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Issues box -->
+  <rect x="80" y="590" width="360" height="80" rx="6" fill="#fff" stroke="#d32f2f" stroke-width="2"/>
+  <text x="260" y="615" font-family="system-ui, sans-serif" font-size="13" font-weight="500" fill="#d32f2f" text-anchor="middle">Issues:</text>
+  <text x="260" y="635" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a" text-anchor="middle">• Higher training loss</text>
+  <text x="260" y="652" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a" text-anchor="middle">• Unstable convergence</text>
+  <text x="260" y="669" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a" text-anchor="middle">• MTP head lacks capacity for visual embeddings</text>
+  
+  <!-- Column 2: Option 2 - Masked Vision Tokens -->
+  <rect x="560" y="80" width="480" height="40" rx="6" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="800" y="107" font-family="system-ui, sans-serif" font-size="16" font-weight="500" fill="#1a1a1a" text-anchor="middle">Option 2: Masked Vision Tokens (Rejected)</text>
+  
+  <!-- Architecture diagram for Option 2 -->
+  <rect x="610" y="150" width="140" height="50" rx="6" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="680" y="180" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a" text-anchor="middle">CogViT</text>
+  
+  <rect x="790" y="150" width="140" height="50" rx="6" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="860" y="180" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a" text-anchor="middle">MLP Adapter</text>
+  
+  <rect x="610" y="250" width="380" height="35" rx="4" fill="#e8e6e3" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="800" y="272" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a" text-anchor="middle">Visual Inputs [MASKED]</text>
+  
+  <rect x="610" y="320" width="380" height="35" rx="4" fill="#e8e6e3" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="800" y="342" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a" text-anchor="middle">Text Inputs (t_1, t_2, ...)</text>
+  
+  <!-- Transformer block -->
+  <rect x="690" y="400" width="220" height="60" rx="6" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="800" y="435" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a" text-anchor="middle">Transformer Block x L</text>
+  
+  <!-- Arrows -->
+  <line x1="680" y1="200" x2="680" y2="250" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="860" y1="200" x2="860" y2="250" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="610" y1="285" x2="750" y2="355" stroke="#5a5a5a" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arrow)"/>
+  <line x1="800" y1="355" x2="800" y2="400" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- MTP Head -->
+  <rect x="670" y="500" width="260" height="60" rx="6" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="800" y="535" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a" text-anchor="middle">MTP Module (Text-only)</text>
+  
+  <!-- Issues box -->
+  <rect x="620" y="590" width="360" height="60" rx="6" fill="#fff" stroke="#d32f2f" stroke-width="2"/>
+  <text x="800" y="615" font-family="system-ui, sans-serif" font-size="13" font-weight="500" fill="#d32f2f" text-anchor="middle">Issues:</text>
+  <text x="800" y="635" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a" text-anchor="middle">• Degrades to text-only MTP</text>
+  <text x="800" y="652" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a" text-anchor="middle">• Loses multimodal capability</text>
+  
+  <!-- Column 3: Option 3 - <|image|> placeholder (Adopted) -->
+  <rect x="1070" y="80" width="480" height="40" rx="6" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="1310" y="107" font-family="system-ui, sans-serif" font-size="16" font-weight="500" fill="#1a1a1a" text-anchor="middle">Option 3: &lt;|image|&gt; Placeholder (Adopted)</text>
+  
+  <!-- Architecture diagram for Option 3 -->
+  <rect x="1130" y="150" width="140" height="50" rx="6" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="1200" y="180" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a" text-anchor="middle">CogViT</text>
+  
+  <rect x="1310" y="150" width="140" height="50" rx="6" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="1380" y="180" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a" text-anchor="middle">MLP Adapter</text>
+  
+  <!-- <|image|> tokens -->
+  <rect x="1130" y="240" width="160" height="35" rx="4" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="1210" y="262" font-family="system-ui, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle">&lt;|image|&gt;</text>
+  
+  <rect x="1310" y="240" width="160" height="35" rx="4" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="1390" y="262" font-family="system-ui, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle">&lt;|image|&gt;</text>
+  
+  <rect x="1490" y="240" width="40" height="35" rx="4" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="1510" y="262" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a" text-anchor="middle">...</text>
+  
+  <rect x="1130" y="310" width="400" height="35" rx="4" fill="#e8e6e3" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="1330" y="332" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a" text-anchor="middle">Text Inputs (t_1, t_2, ...)</text>
+  
+  <!-- Transformer block -->
+  <rect x="1210" y="390" width="200" height="60" rx="6" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="1310" y="425" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a" text-anchor="middle">Transformer Block x L</text>
+  
+  <!-- Arrows -->
+  <line x1="1200" y1="200" x2="1200" y2="240" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="1380" y1="200" x2="1380" y2="240" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="1210" y1="275" x2="1210" y2="310" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="1330" y1="345" x2="1330" y2="390" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- MTP Head -->
+  <rect x="1190" y="490" width="240" height="60" rx="6" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="1310" y="525" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a" text-anchor="middle">MTP Module (&lt;|image|&gt;)</text>
+  
+  <!-- Advantages box -->
+  <rect x="1140" y="580" width="340" height="100" rx="6" fill="#fff" stroke="#388e3c" stroke-width="2"/>
+  <text x="1310" y="605" font-family="system-ui, sans-serif" font-size="13" font-weight="500" fill="#388e3c" text-anchor="middle">Advantages:</text>
+  <text x="1310" y="625" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a" text-anchor="middle">• Lower training loss</text>
+  <text x="1310" y="642" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a" text-anchor="middle">• Stable convergence</text>
+  <text x="1310" y="659" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a" text-anchor="middle">• Compatible with sequence parallelism</text>
+  <text x="1310" y="676" font-family="system-ui, sans-serif" font-size="12" fill="#6a6a6a" text-anchor="middle">• No visual embedding partitioning needed</text>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#5a5a5a"/>
+    </marker>
+  </defs>
+  
+  <!-- Comparison chart at bottom -->
+  <rect x="50" y="680" width="1500" height="1" fill="#4a4a4a" stroke-width="0"/>
+</svg>
