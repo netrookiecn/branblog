@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 400">
+  <rect width="1600" height="400" fill="#f8f6f3"/>
+  <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#5a5a5a"/></marker></defs>
+  <text x="800" y="44" font-family="system-ui,sans-serif" font-size="26" font-weight="600" fill="#1a1a1a" text-anchor="middle">多模态 Agent 技术选型决策</text>
+  <rect x="120" y="100" width="400" height="180" rx="8" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="320" y="180" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#1a1a1a" text-anchor="middle">用 |image| token</text>
+  <text x="320" y="210" font-family="system-ui,sans-serif" font-size="14" fill="#6a6a6a" text-anchor="middle">而非 visual embedding</text>
+  <rect x="600" y="100" width="400" height="180" rx="8" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="800" y="180" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#1a1a1a" text-anchor="middle">层级优化训练</text>
+  <text x="800" y="210" font-family="system-ui,sans-serif" font-size="14" fill="#6a6a6a" text-anchor="middle">感知→定位→单步→轨迹</text>
+  <rect x="1080" y="100" width="400" height="180" rx="8" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="1280" y="180" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#1a1a1a" text-anchor="middle">任务规范+验证</text>
+  <text x="1280" y="210" font-family="system-ui,sans-serif" font-size="14" fill="#6a6a6a" text-anchor="middle">与训练同等重要</text>
+</svg>
