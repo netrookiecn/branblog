@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 440">
+  <rect width="1600" height="440" fill="#f8f6f3"/>
+  <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#5a5a5a"/></marker></defs>
+  <text x="800" y="44" font-family="system-ui,sans-serif" font-size="26" font-weight="600" fill="#1a1a1a" text-anchor="middle">Lens 1：感知错误如何传播到高层能力</text>
+  <rect x="95" y="160" width="210" height="80" rx="8" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="200" y="192" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#1a1a1a" text-anchor="middle">视觉输入</text>
+  <text x="200" y="216" font-family="system-ui,sans-serif" font-size="13" fill="#6a6a6a" text-anchor="middle">图片 / 截图 / GUI</text>
+  <line x1="309" y1="200" x2="331" y2="200" stroke="#5a5a5a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="335" y="160" width="210" height="80" rx="8" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="440" y="192" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#1a1a1a" text-anchor="middle">细粒度感知</text>
+  <text x="440" y="216" font-family="system-ui,sans-serif" font-size="13" fill="#6a6a6a" text-anchor="middle">布局 / 空间 / OCR</text>
+  <line x1="549" y1="200" x2="571" y2="200" stroke="#5a5a5a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="575" y="160" width="210" height="80" rx="8" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="680" y="192" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#1a1a1a" text-anchor="middle">理解</text>
+  <text x="680" y="216" font-family="system-ui,sans-serif" font-size="13" fill="#6a6a6a" text-anchor="middle">语义 / 结构</text>
+  <line x1="789" y1="200" x2="811" y2="200" stroke="#5a5a5a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="815" y="160" width="210" height="80" rx="8" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="920" y="192" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#1a1a1a" text-anchor="middle">推理</text>
+  <text x="920" y="216" font-family="system-ui,sans-serif" font-size="13" fill="#6a6a6a" text-anchor="middle">STEM / 逻辑</text>
+  <line x1="1029" y1="200" x2="1051" y2="200" stroke="#5a5a5a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="1055" y="160" width="210" height="80" rx="8" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="1160" y="192" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#1a1a1a" text-anchor="middle">决策 & 执行</text>
+  <text x="1160" y="216" font-family="system-ui,sans-serif" font-size="13" fill="#6a6a6a" text-anchor="middle">GUI Agent / 工具调用</text>
+  <line x1="1269" y1="200" x2="1291" y2="200" stroke="#5a5a5a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="1295" y="160" width="210" height="80" rx="8" fill="#e8e6e3" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="1400" y="192" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#1a1a1a" text-anchor="middle">最终输出</text>
+  <text x="1400" y="216" font-family="system-ui,sans-serif" font-size="13" fill="#6a6a6a" text-anchor="middle">代码 / 报告 / 操作</text>
+  <rect x="95" y="285" width="450" height="50" rx="6" fill="none" stroke="#d32f2f" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="320" y="315" font-family="system-ui,sans-serif" font-size="14" fill="#d32f2f" text-anchor="middle">感知错误从这里传播 →</text>
+  <text x="800" y="390" font-family="system-ui,sans-serif" font-size="15" fill="#6a6a6a" text-anchor="middle">感知层的错误会向上传播，表现为"高层能力不足"——但根因在底层看不准</text>
+</svg>

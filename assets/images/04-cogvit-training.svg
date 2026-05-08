@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 620">
+  <rect width="1600" height="620" fill="#f8f6f3"/>
+  <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#5a5a5a"/></marker></defs>
+  <text x="800" y="44" font-family="system-ui,sans-serif" font-size="26" font-weight="600" fill="#1a1a1a" text-anchor="middle">CogViT 两阶段预训练</text>
+  <rect x="60" y="70" width="720" height="510" rx="10" fill="#fff" stroke="#a8c5e6" stroke-width="2.5"/>
+  <rect x="60" y="70" width="720" height="50" rx="10" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="420" y="103" font-family="system-ui,sans-serif" font-size="19" font-weight="600" fill="#1a1a1a" text-anchor="middle">Stage 1：蒸馏式 MIM</text>
+  <rect x="100" y="155" width="640" height="52" rx="6" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="1.5"/>
+  <text x="420" y="187" font-family="system-ui,sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Teacher：SigLIP2（语义）+ DINOv3（纹理）</text>
+  <rect x="100" y="235" width="640" height="52" rx="6" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="1.5"/>
+  <text x="420" y="267" font-family="system-ui,sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Student ViT 重建 masked 区域（35% mask ratio）</text>
+  <rect x="100" y="315" width="640" height="52" rx="6" fill="#e8e6e3" stroke="#4a4a4a" stroke-width="1.5"/>
+  <text x="420" y="347" font-family="system-ui,sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">数据配比：80% 自然图 + 10% 指令 + 10% 科学图</text>
+  <rect x="100" y="395" width="640" height="52" rx="6" fill="#e8e6e3" stroke="#4a4a4a" stroke-width="1.5"/>
+  <text x="420" y="427" font-family="system-ui,sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Optimizer：Muon + cosine decay</text>
+  <rect x="100" y="475" width="640" height="52" rx="6" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="1.5"/>
+  <text x="420" y="507" font-family="system-ui,sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">输出：强视觉特征表示（语义 + 纹理）</text>
+  <line x1="420" y1="207" x2="420" y2="235" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="420" y1="287" x2="420" y2="315" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="420" y1="367" x2="420" y2="395" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="420" y1="447" x2="420" y2="475" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="780" y1="330" x2="820" y2="330" stroke="#5a5a5a" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="800" y="320" font-family="system-ui,sans-serif" font-size="13" fill="#6a6a6a" text-anchor="middle">freeze</text>
+  <text x="800" y="344" font-family="system-ui,sans-serif" font-size="13" fill="#6a6a6a" text-anchor="middle">weights</text>
+  <rect x="820" y="70" width="720" height="510" rx="10" fill="#fff" stroke="#9dd4c7" stroke-width="2.5"/>
+  <rect x="820" y="70" width="720" height="50" rx="10" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="1180" y="103" font-family="system-ui,sans-serif" font-size="19" font-weight="600" fill="#1a1a1a" text-anchor="middle">Stage 2：对比学习预训练</text>
+  <rect x="860" y="155" width="640" height="52" rx="6" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="1.5"/>
+  <text x="1180" y="187" font-family="system-ui,sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">NaFlex：可变分辨率，保持原始宽高比</text>
+  <rect x="860" y="235" width="640" height="52" rx="6" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="1.5"/>
+  <text x="1180" y="267" font-family="system-ui,sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">SigLIP loss（sigmoid），batch size 64K</text>
+  <rect x="860" y="315" width="640" height="52" rx="6" fill="#e8e6e3" stroke="#4a4a4a" stroke-width="1.5"/>
+  <text x="1180" y="347" font-family="system-ui,sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">双语语料：8B 中英图文对</text>
+  <rect x="860" y="395" width="640" height="52" rx="6" fill="#e8e6e3" stroke="#4a4a4a" stroke-width="1.5"/>
+  <text x="1180" y="427" font-family="system-ui,sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">QK-Normalization：防止 logit 爆炸</text>
+  <rect x="860" y="475" width="640" height="52" rx="6" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="1.5"/>
+  <text x="1180" y="507" font-family="system-ui,sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">输出：视觉-文本对齐的共享嵌入空间</text>
+  <line x1="1180" y1="207" x2="1180" y2="235" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="1180" y1="287" x2="1180" y2="315" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="1180" y1="367" x2="1180" y2="395" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="1180" y1="447" x2="1180" y2="475" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arr)"/>
+</svg>

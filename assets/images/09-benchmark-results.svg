@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 560">
+  <rect width="1600" height="560" fill="#f8f6f3"/>
+  <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#5a5a5a"/></marker></defs>
+  <text x="800" y="44" font-family="system-ui,sans-serif" font-size="26" font-weight="600" fill="#1a1a1a" text-anchor="middle">GLM-5V-Turbo Benchmark 结果</text>
+  <text x="260" y="120" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a" text-anchor="end">Design2Code</text>
+  <rect x="270" y="90" width="900" height="46" rx="4" fill="#e8e6e3"/>
+  <rect x="270" y="90" width="853" height="46" rx="4" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="1131" y="120" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#1a1a1a">94.8</text>
+  <text x="1240" y="120" font-family="system-ui,sans-serif" font-size="13" fill="#6a6a6a">多模态编码</text>
+  <text x="260" y="178" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a" text-anchor="end">SimpleVQA</text>
+  <rect x="270" y="148" width="900" height="46" rx="4" fill="#e8e6e3"/>
+  <rect x="270" y="148" width="703" height="46" rx="4" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="981" y="178" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#1a1a1a">78.2</text>
+  <text x="1240" y="178" font-family="system-ui,sans-serif" font-size="13" fill="#6a6a6a">多模态工具</text>
+  <text x="260" y="236" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a" text-anchor="end">AndroidWorld</text>
+  <rect x="270" y="206" width="900" height="46" rx="4" fill="#e8e6e3"/>
+  <rect x="270" y="206" width="681" height="46" rx="4" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="959" y="236" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#1a1a1a">75.7</text>
+  <text x="1240" y="236" font-family="system-ui,sans-serif" font-size="13" fill="#6a6a6a">GUI Agent</text>
+  <text x="260" y="294" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a" text-anchor="end">CC-Frontend</text>
+  <rect x="270" y="264" width="900" height="46" rx="4" fill="#e8e6e3"/>
+  <rect x="270" y="264" width="615" height="46" rx="4" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="893" y="294" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#1a1a1a">68.4</text>
+  <text x="1240" y="294" font-family="system-ui,sans-serif" font-size="13" fill="#6a6a6a">文本编码</text>
+  <text x="260" y="352" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a" text-anchor="end">OSWorld</text>
+  <rect x="270" y="322" width="900" height="46" rx="4" fill="#e8e6e3"/>
+  <rect x="270" y="322" width="560" height="46" rx="4" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="838" y="352" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#1a1a1a">62.3</text>
+  <text x="1240" y="352" font-family="system-ui,sans-serif" font-size="13" fill="#6a6a6a">GUI Agent</text>
+  <text x="260" y="410" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a" text-anchor="end">MMSearch</text>
+  <rect x="270" y="380" width="900" height="46" rx="4" fill="#e8e6e3"/>
+  <rect x="270" y="380" width="656" height="46" rx="4" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="934" y="410" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#1a1a1a">72.9</text>
+  <text x="1240" y="410" font-family="system-ui,sans-serif" font-size="13" fill="#6a6a6a">多模态工具</text>
+  <text x="260" y="468" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a" text-anchor="end">BrowseComp-VL</text>
+  <rect x="270" y="438" width="900" height="46" rx="4" fill="#e8e6e3"/>
+  <rect x="270" y="438" width="467" height="46" rx="4" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="745" y="468" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#1a1a1a">51.9</text>
+  <text x="1240" y="468" font-family="system-ui,sans-serif" font-size="13" fill="#6a6a6a">多模态工具</text>
+  <text x="260" y="526" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a" text-anchor="end">CC-RepoExplore</text>
+  <rect x="270" y="496" width="900" height="46" rx="4" fill="#e8e6e3"/>
+  <rect x="270" y="496" width="649" height="46" rx="4" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="927" y="526" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#1a1a1a">72.2</text>
+  <text x="1240" y="526" font-family="system-ui,sans-serif" font-size="13" fill="#6a6a6a">文本编码</text>
+  <rect x="270" y="510" width="22" height="22" rx="3" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="298" y="527" font-family="system-ui,sans-serif" font-size="14" fill="#6a6a6a">多模态编码/工具</text>
+  <rect x="470" y="510" width="22" height="22" rx="3" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="498" y="527" font-family="system-ui,sans-serif" font-size="14" fill="#6a6a6a">GUI Agent</text>
+  <rect x="670" y="510" width="22" height="22" rx="3" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="698" y="527" font-family="system-ui,sans-serif" font-size="14" fill="#6a6a6a">文本编码</text>
+</svg>

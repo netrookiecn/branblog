@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 560">
+  <rect width="1600" height="560" fill="#f8f6f3"/>
+  <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#5a5a5a"/></marker></defs>
+  <text x="800" y="44" font-family="system-ui,sans-serif" font-size="26" font-weight="600" fill="#1a1a1a" text-anchor="middle">多模态 RL：30+ 任务联合训练的提升</text>
+  <rect x="80" y="70" width="460" height="46" rx="8" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="310" y="100" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#1a1a1a" text-anchor="middle">感知 Perception</text>
+  <rect x="100" y="135" width="420" height="40" rx="4" fill="#e8e6e3"/>
+  <rect x="100" y="135" width="252" height="40" rx="4" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="108" y="161" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a">RefCOCO-avg</text>
+  <text x="360" y="161" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#1a1a1a">+4.8%</text>
+  <rect x="100" y="200" width="420" height="40" rx="4" fill="#e8e6e3"/>
+  <rect x="100" y="200" width="168" height="40" rx="4" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="108" y="226" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a">PointBench</text>
+  <text x="276" y="226" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#1a1a1a">+3.2%</text>
+  <rect x="100" y="265" width="420" height="40" rx="4" fill="#e8e6e3"/>
+  <rect x="100" y="265" width="294" height="40" rx="4" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="108" y="291" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a">MVBench</text>
+  <text x="402" y="291" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#1a1a1a">+5.6%</text>
+  <rect x="100" y="330" width="420" height="40" rx="4" fill="#e8e6e3"/>
+  <rect x="100" y="330" width="404" height="40" rx="4" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="108" y="356" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a">SUNRGBD</text>
+  <text x="512" y="356" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#1a1a1a">+7.7%</text>
+  <rect x="100" y="395" width="420" height="40" rx="4" fill="#e8e6e3"/>
+  <rect x="100" y="395" width="220" height="40" rx="4" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="108" y="421" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a">OCRBench</text>
+  <text x="328" y="421" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#1a1a1a">+4.2%</text>
+  <rect x="100" y="460" width="420" height="40" rx="4" fill="#e8e6e3"/>
+  <rect x="100" y="460" width="404" height="40" rx="4" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="108" y="486" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a">CharXiv</text>
+  <text x="512" y="486" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#1a1a1a">+7.7%</text>
+  <rect x="600" y="70" width="460" height="46" rx="8" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="830" y="100" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#1a1a1a" text-anchor="middle">推理 Reasoning</text>
+  <rect x="620" y="135" width="420" height="40" rx="4" fill="#e8e6e3"/>
+  <rect x="620" y="135" width="94" height="40" rx="4" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="628" y="161" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a">MMMU_Val</text>
+  <text x="722" y="161" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#1a1a1a">+1.8%</text>
+  <rect x="620" y="200" width="420" height="40" rx="4" fill="#e8e6e3"/>
+  <rect x="620" y="200" width="94" height="40" rx="4" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="628" y="226" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a">MathVista</text>
+  <text x="722" y="226" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#1a1a1a">+1.8%</text>
+  <rect x="620" y="265" width="420" height="40" rx="4" fill="#e8e6e3"/>
+  <rect x="620" y="265" width="94" height="40" rx="4" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="628" y="291" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a">LogicVista</text>
+  <text x="722" y="291" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#1a1a1a">+1.8%</text>
+  <rect x="1160" y="70" width="460" height="46" rx="8" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="1390" y="100" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#1a1a1a" text-anchor="middle">Agent</text>
+  <rect x="1180" y="135" width="420" height="40" rx="4" fill="#e8e6e3"/>
+  <rect x="1180" y="135" width="257" height="40" rx="4" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="1188" y="161" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a">OSWorld</text>
+  <text x="1445" y="161" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#1a1a1a">+4.9%</text>
+  <rect x="1180" y="200" width="420" height="40" rx="4" fill="#e8e6e3"/>
+  <rect x="1180" y="200" width="10" height="40" rx="4" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="1188" y="226" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a">CC-Backend</text>
+  <text x="1198" y="226" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#1a1a1a">+0.2%</text>
+  <rect x="1180" y="265" width="420" height="40" rx="4" fill="#e8e6e3"/>
+  <rect x="1180" y="265" width="183" height="40" rx="4" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="1"/>
+  <text x="1188" y="291" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a">MMSearch</text>
+  <text x="1371" y="291" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#1a1a1a">+3.5%</text>
+</svg>

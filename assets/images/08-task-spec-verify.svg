@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 520">
+  <rect width="1600" height="520" fill="#f8f6f3"/>
+  <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#5a5a5a"/></marker></defs>
+  <text x="800" y="44" font-family="system-ui,sans-serif" font-size="26" font-weight="600" fill="#1a1a1a" text-anchor="middle">Lens 3：任务规范 × 验证设计 × 评估控制</text>
+  <rect x="100" y="75" width="400" height="50" rx="8" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="300" y="108" font-family="system-ui,sans-serif" font-size="20" font-weight="600" fill="#1a1a1a" text-anchor="middle">任务规范</text>
+  <rect x="100" y="150" width="400" height="60" rx="6" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="1.5" fill-opacity="0.7"/>
+  <text x="300" y="186" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a" text-anchor="middle">不只是文本指令</text>
+  <rect x="100" y="222" width="400" height="60" rx="6" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="1.5" fill-opacity="0.7"/>
+  <text x="300" y="258" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a" text-anchor="middle">PRD + Mockup +</text>
+  <rect x="100" y="294" width="400" height="60" rx="6" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="1.5" fill-opacity="0.7"/>
+  <text x="300" y="330" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a" text-anchor="middle">参考页面 + 资源资产</text>
+  <rect x="100" y="366" width="400" height="60" rx="6" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="1.5" fill-opacity="0.7"/>
+  <text x="300" y="402" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a" text-anchor="middle">→ 明确边界，可比较</text>
+  <line x1="510" y1="300" x2="596" y2="300" stroke="#5a5a5a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="600" y="75" width="400" height="50" rx="8" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="800" y="108" font-family="system-ui,sans-serif" font-size="20" font-weight="600" fill="#1a1a1a" text-anchor="middle">验证设计</text>
+  <rect x="600" y="150" width="400" height="60" rx="6" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="1.5" fill-opacity="0.7"/>
+  <text x="800" y="186" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a" text-anchor="middle">工作流式验证</text>
+  <rect x="600" y="222" width="400" height="60" rx="6" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="1.5" fill-opacity="0.7"/>
+  <text x="800" y="258" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a" text-anchor="middle">受控依赖步骤序列</text>
+  <rect x="600" y="294" width="400" height="60" rx="6" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="1.5" fill-opacity="0.7"/>
+  <text x="800" y="330" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a" text-anchor="middle">≠ 单一最终状态</text>
+  <rect x="600" y="366" width="400" height="60" rx="6" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="1.5" fill-opacity="0.7"/>
+  <text x="800" y="402" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a" text-anchor="middle">→ 可归因，可优化</text>
+  <line x1="1010" y1="300" x2="1096" y2="300" stroke="#5a5a5a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="1100" y="75" width="400" height="50" rx="8" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="1300" y="108" font-family="system-ui,sans-serif" font-size="20" font-weight="600" fill="#1a1a1a" text-anchor="middle">评估控制</text>
+  <rect x="1100" y="150" width="400" height="60" rx="6" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="1.5" fill-opacity="0.7"/>
+  <text x="1300" y="186" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a" text-anchor="middle">功能正确性</text>
+  <rect x="1100" y="222" width="400" height="60" rx="6" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="1.5" fill-opacity="0.7"/>
+  <text x="1300" y="258" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a" text-anchor="middle">（交互执行）</text>
+  <rect x="1100" y="294" width="400" height="60" rx="6" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="1.5" fill-opacity="0.7"/>
+  <text x="1300" y="330" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a" text-anchor="middle">视觉一致性</text>
+  <rect x="1100" y="366" width="400" height="60" rx="6" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="1.5" fill-opacity="0.7"/>
+  <text x="1300" y="402" font-family="system-ui,sans-serif" font-size="15" fill="#1a1a1a" text-anchor="middle">（隔离比较）</text>
+  <text x="800" y="495" font-family="system-ui,sans-serif" font-size="15" fill="#6a6a6a" text-anchor="middle">Vision2Web 是这个设计理念的具体实例：规范 × 验证 × 评估三者联合设计</text>
+</svg>

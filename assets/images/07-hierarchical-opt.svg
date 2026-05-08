@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 560">
+  <rect width="1600" height="560" fill="#f8f6f3"/>
+  <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#5a5a5a"/></marker></defs>
+  <text x="800" y="44" font-family="system-ui,sans-serif" font-size="26" font-weight="600" fill="#1a1a1a" text-anchor="middle">Lens 2：层级优化 vs 端到端训练</text>
+  <rect x="60" y="70" width="680" height="50" rx="8" fill="#e8e6e3" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="400" y="102" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#6a6a6a" text-anchor="middle">端到端训练（不稳定）</text>
+  <rect x="100" y="160" width="600" height="90" rx="8" fill="#e8e6e3" stroke="#d32f2f" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="400" y="195" font-family="system-ui,sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">直接训练长程 Agent 任务</text>
+  <text x="400" y="218" font-family="system-ui,sans-serif" font-size="14" fill="#6a6a6a" text-anchor="middle">（多步轨迹 / 开放式环境）</text>
+  <text x="400" y="310" font-family="system-ui,sans-serif" font-size="15" fill="#d32f2f" text-anchor="middle">问题：低层能力弱 → 高层信号稀疏 → 训练震荡</text>
+  <text x="400" y="340" font-family="system-ui,sans-serif" font-size="15" fill="#d32f2f" text-anchor="middle">数据成本高 + 验证困难</text>
+  <rect x="860" y="70" width="680" height="50" rx="8" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="1200" y="102" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#1a1a1a" text-anchor="middle">层级优化（稳定）</text>
+  <rect x="900" y="155" width="600" height="62" rx="6" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="1200" y="183" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#1a1a1a" text-anchor="middle">L1 元素感知</text>
+  <text x="1200" y="203" font-family="system-ui,sans-serif" font-size="13" fill="#6a6a6a" text-anchor="middle">识别 UI 元素 / 图像定位</text>
+  <rect x="900" y="235" width="600" height="62" rx="6" fill="#a8c5e6" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="1200" y="263" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#1a1a1a" text-anchor="middle">L2 GUI 定位</text>
+  <text x="1200" y="283" font-family="system-ui,sans-serif" font-size="13" fill="#6a6a6a" text-anchor="middle">指向 / grounding</text>
+  <rect x="900" y="315" width="600" height="62" rx="6" fill="#f4e4c1" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="1200" y="343" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#1a1a1a" text-anchor="middle">L3 单步动作预测</text>
+  <text x="1200" y="363" font-family="system-ui,sans-serif" font-size="13" fill="#6a6a6a" text-anchor="middle">点击 / 输入 / 滚动</text>
+  <rect x="900" y="395" width="600" height="62" rx="6" fill="#9dd4c7" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="1200" y="423" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#1a1a1a" text-anchor="middle">L4 轨迹级任务</text>
+  <text x="1200" y="443" font-family="system-ui,sans-serif" font-size="13" fill="#6a6a6a" text-anchor="middle">多步 Agent 操作</text>
+  <line x1="1200" y1="217" x2="1200" y2="235" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="1200" y1="297" x2="1200" y2="315" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="1200" y1="377" x2="1200" y2="395" stroke="#5a5a5a" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="1200" y="490" font-family="system-ui,sans-serif" font-size="15" fill="#388e3c" text-anchor="middle">底层任务易构建 + 能力积累后推高层 → 稳定收敛</text>
+  <line x1="790" y1="60" x2="790" y2="510" stroke="#4a4a4a" stroke-width="1.5" stroke-dasharray="8,4"/>
+</svg>
